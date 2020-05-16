@@ -1,0 +1,43 @@
+{
+  "name": "js-form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open --port 3000",
+    "build": "webpack"
+  },
+  "repository": "https://github.com/RPlaha0390/js-form.git",
+  "author": "Raman Plaha <ramanplaha1990@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "flatpickr": "^4.6.3",
+    "notyf": "^3.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@types/flatpickr": "^3.1.2",
+    "@types/notyf": "^3.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^3.5.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^8.0.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.3",
+    "typescript": "^3.8.3",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
