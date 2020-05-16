@@ -18,11 +18,20 @@
       <form id="form">
         <div class="text-input">
           <label for="first-name">First name</label>
-          <input id="first-name" type="text" placeholder="e.g. Brian" />
+          <input
+            id="first-name"
+            type="text"
+            placeholder="e.g. Brian"
+            autocomplete="off"
+          />
         </div>
         <div class="text-input">
           <label for="family-name">Family name</label>
-          <input id="family-name" type="text" />
+          <input id="family-name" type="text" autocomplete="off" />
+        </div>
+        <div class="text-input date-input">
+          <label for="datepicker">Choose a day</label>
+          <input id="datepicker" type="text" autocomplete="off" />
         </div>
         <div class="select-input">
           <label for="attendees-number">Number of attendees</label>
@@ -40,15 +49,20 @@
         </div>
         <div class="text-input">
           <label for="company-name">Company name</label>
-          <input id="company-name" type="text" placeholder="e.g. Stadion" />
+          <input
+            id="company-name"
+            type="text"
+            placeholder="e.g. Stadion"
+            autocomplete="off"
+          />
         </div>
         <div class="text-input">
           <label for="email">Email</label>
-          <input id="email" type="email" />
+          <input id="email" type="email" autocomplete="off" />
         </div>
         <div class="text-input mb-50">
           <label for="tel">Telephone</label>
-          <input id="tel" type="tel" />
+          <input id="tel" type="tel" autocomplete="off" />
         </div>
         <div class="checkbox mb-80">
           <input id="disability" type="checkbox" />

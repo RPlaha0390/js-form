@@ -15,14 +15,16 @@
   "author": "Raman Plaha <ramanplaha1990@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "flatpickr": "^4.6.3",
-    "notyf": "^3.7.0"
+    "moment": "^2.25.3",
+    "notyf": "^3.7.0",
+    "pikaday": "^1.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
-    "@types/flatpickr": "^3.1.2",
+    "@types/moment": "^2.13.0",
     "@types/notyf": "^3.0.0",
+    "@types/pikaday": "^1.7.4",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.4",
     "css-loader": "^3.5.3",

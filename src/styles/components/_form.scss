@@ -101,12 +101,12 @@ label {
 
   &:after {
     @extend .icon;
-    bottom: 4px;
+    bottom: 6px;
     color: $gray;
     content: 'keyboard_arrow_down';
     pointer-events: none;
     position: absolute;
-    right: 6px;
+    right: -3px;
   }
 
   select {
@@ -128,5 +128,27 @@ label {
     &:focus {
       border-color: $black;
     }
+  }
+}
+
+/*** Datepicker ***/
+
+.date-input {
+  position: relative;
+
+  &:focus-within {
+    &:after {
+      color: $red;
+    }
+  }
+
+  &:after {
+    @extend .icon;
+    bottom: 6px;
+    color: $gray;
+    content: 'event';
+    pointer-events: none;
+    position: absolute;
+    right: -3px;
   }
 }
