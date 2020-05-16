@@ -1,0 +1,132 @@
+label {
+  display: block;
+  margin: 0 0 12px;
+}
+
+/*** Checkbox ***/
+.checkbox {
+  position: relative;
+
+  label {
+    cursor: pointer;
+    min-height: 18px;
+    padding: 10px 0 10px 40px;
+
+    &:before {
+      content: '';
+      border: 2px solid $gray;
+      height: 24px;
+      left: 0;
+      position: absolute;
+      top: 4px;
+      width: 24px;
+    }
+  }
+
+  input {
+    @extend .visually-hidden;
+
+    &:focus ~ label:before {
+      border-color: $black;
+    }
+  }
+}
+
+.checkbox {
+  label:after {
+    @extend .icon;
+    content: 'done';
+    left: 1px;
+    position: absolute;
+    top: 5px;
+    font-size: 26px !important;
+    color: $red;
+    transform: scale(0);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  input:checked ~ label:after {
+    transform: scale(1);
+  }
+}
+
+/*** Text Input ***/
+.text-input {
+  font-size: 16px;
+  margin-bottom: 35px;
+
+  label {
+    text-transform: uppercase;
+  }
+
+  input {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid $gray;
+    border-left: 0;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+
+    &:focus {
+      outline: 2px solid transparent;
+      border-color: $black;
+    }
+  }
+}
+
+/*** Select Input ***/
+.select-input {
+  position: relative;
+  margin-bottom: 35px;
+
+  label {
+    text-transform: uppercase;
+  }
+
+  &:focus-within {
+    &:after {
+      color: $red;
+    }
+  }
+
+  &:before {
+    bottom: 0;
+    content: '';
+    height: 34px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    width: 36px;
+  }
+
+  &:after {
+    @extend .icon;
+    bottom: 4px;
+    color: $gray;
+    content: 'keyboard_arrow_down';
+    pointer-events: none;
+    position: absolute;
+    right: 6px;
+  }
+
+  select {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid $gray;
+    border-left: 0;
+    border-radius: 0;
+    cursor: pointer;
+    display: block;
+    outline: 0;
+    padding: 6px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+
+    &:focus {
+      border-color: $black;
+    }
+  }
+}

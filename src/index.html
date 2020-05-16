@@ -14,6 +14,48 @@
     <link rel="stylesheet" href="../dist/bundle.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <form id="form">
+        <div class="text-input">
+          <label for="first-name">First name</label>
+          <input id="first-name" type="text" placeholder="e.g. Brian" />
+        </div>
+        <div class="text-input">
+          <label for="family-name">Family name</label>
+          <input id="family-name" type="text" />
+        </div>
+        <div class="select-input">
+          <label for="attendees-number">Number of attendees</label>
+          <select id="attendees-number">
+            <option value="0" selected disabled></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="text-input">
+          <label for="company-name">Company name</label>
+          <input id="company-name" type="text" placeholder="e.g. Stadion" />
+        </div>
+        <div class="text-input">
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <div class="text-input mb-50">
+          <label for="tel">Telephone</label>
+          <input id="tel" type="tel" />
+        </div>
+        <div class="checkbox mb-80">
+          <input id="disability" type="checkbox" />
+          <label for="disability"><span>Do you need a wheelchair?</span></label>
+        </div>
+        <button type="submit">Buy</button>
+      </form>
+    </div>
   </body>
 </html>

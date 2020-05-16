@@ -10,10 +10,33 @@
   display: none !important;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .show {
   display: block !important;
 }
 
-.show-flex {
-  display: flex !important;
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+
+.row {
+  display: flex;
+}
+
+.column-2 {
+  flex: 50%;
 }
