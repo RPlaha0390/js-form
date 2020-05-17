@@ -1,8 +1,11 @@
 import api from '../../api/api';
 import { Notyf } from 'notyf';
+import moment from 'moment';
+import { Datepicker } from './Datepicker';
 
 class Form {
-  private notyf = new Notyf({ position: { x: 'right', y: 'top' } });
+  public notyf = new Notyf({ position: { x: 'right', y: 'top' } });
+  public datepicker = new Datepicker();
 
   showSubmitButton = () => {
     const button = document.getElementById('submit-button');
@@ -20,10 +23,23 @@ class Form {
         }, {})
       : null;
 
+  validateDateField = (date: Date) =>
+    this.datepicker.unavailableDates.includes(
+      moment(date).format('YYYY-MM-DD')
+    );
+
   onSubmit(e: Event) {
     e.preventDefault();
     const form = document.getElementById('form');
     const data = this.createFormObject(form);
+    const isDateValid = !this.validateDateField(data.datepicker);
+
+    if (!isDateValid) {
+      return this.notyf.error({
+        message: 'Please select a another date',
+        icon: false,
+      });
+    }
 
     api.forms
       .postForm({ data })

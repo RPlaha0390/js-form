@@ -2,7 +2,7 @@ import Pikaday from 'pikaday';
 import moment from 'moment';
 
 class Datepicker {
-  private unavailableDates = ['2019-08-07', '2019-08-20', '2019-09-01'];
+  public unavailableDates = ['2019-08-07', '2019-08-20', '2019-09-01'];
 
   init() {
     new Pikaday({
