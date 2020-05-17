@@ -12,3 +12,9 @@ document
   ?.addEventListener('change', (event) =>
     eventForm.calculateAttendeesPrice(event)
   );
+
+document
+  .querySelectorAll('[data-icon="event"]')[0]
+  .addEventListener('click', (_event) => {
+    document.getElementById('datepicker')?.focus();
+  });

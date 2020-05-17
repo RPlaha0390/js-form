@@ -29,9 +29,15 @@
           <label for="family-name">Family name</label>
           <input id="family-name" type="text" autocomplete="off" />
         </div>
-        <div class="text-input date-input">
+        <div class="text-input">
           <label for="datepicker">Choose a day</label>
-          <input id="datepicker" type="text" autocomplete="off" />
+          <div class="icon-input">
+            <input id="datepicker" type="text" autocomplete="off" />
+          </div>
+          <p class="error-message hidden">
+            Sorry, but the date you have selected is unavailable. Please select
+            another.
+          </p>
         </div>
         <div class="select-input">
           <label for="attendees-number">Number of attendees</label>

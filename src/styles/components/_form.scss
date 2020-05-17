@@ -72,6 +72,10 @@ label {
       outline: 2px solid transparent;
       border-color: $black;
     }
+
+    &.error {
+      border-color: $red;
+    }
   }
 }
 
@@ -86,7 +90,7 @@ label {
 
   &:focus-within {
     &:after {
-      color: $red;
+      color: $black;
     }
   }
 
@@ -132,14 +136,19 @@ label {
   }
 }
 
-/*** Datepicker ***/
-
-.date-input {
+/*** Icon Input ***/
+.icon-input {
+  display: flex;
+  width: 100%;
   position: relative;
+
+  input {
+    cursor: pointer;
+  }
 
   &:focus-within {
     &:after {
-      color: $red;
+      color: $black;
     }
   }
 
@@ -152,4 +161,11 @@ label {
     position: absolute;
     right: -3px;
   }
+}
+
+/*** Form Errors ***/
+.error-message {
+  color: $red;
+  font-size: 12px;
+  padding-top: 10px;
 }

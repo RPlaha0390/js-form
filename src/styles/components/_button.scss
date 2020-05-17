@@ -12,6 +12,7 @@ button {
 
   &.icon-only {
     padding: 12px 14px;
+    width: auto;
   }
 
   &:hover,
@@ -22,7 +23,8 @@ button {
   }
 }
 
-button[data-icon] {
+button[data-icon],
+i {
   &:before {
     @extend .icon;
     content: attr(data-icon);
