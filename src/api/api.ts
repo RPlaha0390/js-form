@@ -6,7 +6,11 @@ const api = {
 };
 
 export const client = Axios.create({
-  baseURL: 'http://www.mocky.io/v2',
+  baseURL: 'https://www.mocky.io/v2',
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+    'Content-Type': 'application/json',
+  },
 });
 
 export default api;
