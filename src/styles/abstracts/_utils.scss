@@ -25,6 +25,10 @@
   display: block !important;
 }
 
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
 .mb-50 {
   margin-bottom: 50px !important;
 }
@@ -33,10 +37,18 @@
   margin-bottom: 80px !important;
 }
 
+.pt-25 {
+  padding-top: 25px !important;
+}
+
 .row {
   display: flex;
 }
 
-.column-2 {
+.border-top {
+  border-top: 2px solid $light-gray;
+}
+
+.col-2 {
   flex: 50%;
 }

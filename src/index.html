@@ -68,7 +68,18 @@
           <input id="disability" type="checkbox" />
           <label for="disability"><span>Do you need a wheelchair?</span></label>
         </div>
-        <button type="submit">Buy</button>
+        <div
+          id="count-container"
+          class="row hidden border-top pt-25 mb-40 font-light"
+        >
+          <div class="col-2">Attendees</div>
+          <div id="count" class="col-2 text-right"></div>
+        </div>
+        <div
+          id="price-container"
+          class="text-right font-bold font-20 mb-40"
+        ></div>
+        <button id="submit-button" class="hidden" type="submit">Buy</button>
       </form>
     </div>
   </body>
