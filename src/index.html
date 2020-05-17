@@ -15,6 +15,24 @@
   </head>
   <body>
     <div id="app">
+      <h1 class="mt-80 mb-50">Attend event</h1>
+      <h2 class="text-red mb-15">Early bird offer</h2>
+      <p>
+        Discounts are available for groups. The bigger the group, the bigger the
+        discount. Prices are as follows:
+      </p>
+      <div class="row border-bottom pt-10 pb-10 font-light">
+        <div class="col-2">1 - 3</div>
+        <div class="col-2 text-right">£50</div>
+      </div>
+      <div class="row border-bottom pt-10 pb-10 font-light">
+        <div class="col-2">4 - 6</div>
+        <div class="col-2 text-right">£40</div>
+      </div>
+      <div class="row border-bottom mb-50 pt-10 pb-10 font-light">
+        <div class="col-2">6 +</div>
+        <div class="col-2 text-right">£35</div>
+      </div>
       <form id="form">
         <div class="text-input">
           <label for="first-name">First name</label>
@@ -54,7 +72,10 @@
           </select>
         </div>
         <div class="text-input">
-          <label for="company-name">Company name</label>
+          <div class="optional-input">
+            <label for="company-name">Company name</label>
+            <span>Optional</span>
+          </div>
           <input
             id="company-name"
             type="text"
@@ -67,7 +88,10 @@
           <input id="email" type="email" autocomplete="off" />
         </div>
         <div class="text-input mb-50">
-          <label for="tel">Telephone</label>
+          <div class="optional-input">
+            <label for="tel">Telephone</label>
+            <span>Optional</span>
+          </div>
           <input id="tel" type="tel" autocomplete="off" />
         </div>
         <div class="checkbox mb-80">

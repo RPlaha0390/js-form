@@ -59,6 +59,17 @@ label {
     text-transform: uppercase;
   }
 
+  .optional-input {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-weight: $light;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
   input {
     border-top: 0;
     border-right: 0;
