@@ -15,7 +15,7 @@
   "author": "Raman Plaha <ramanplaha1990@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "currency": "^4.1.0",
     "moment": "^2.25.3",
     "notyf": "^3.7.0",
